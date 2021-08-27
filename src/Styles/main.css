@@ -256,4 +256,46 @@ body {
   color: #972626;
   line-height: 1.5;
   font-size: 0.875rem;
+}
+
+.navbar {
+  background: #fff;
+  width: 100%;
+  height: 3rem;
+}
+.navbar .nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .nav-center .nav-toggle {
+  font-size: 2rem;
+  margin: 0.5rem 0 0 0.5rem;
+}
+
+.menu-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 60vw;
+  max-width: 600px;
+}
+.menu-container h1 {
+  color: #b82e2e;
+  text-align: center;
+}
+.menu-container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu-container .row .link {
+  font-size: 1.2rem;
+  color: #222;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
