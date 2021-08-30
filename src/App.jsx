@@ -15,9 +15,9 @@ function App() {
         {links
           .filter((link) => link.text !== "Landing")
           .map((link) => {
-            const { id, url, page, text } = link;
+            const { id, url, page } = link;
             return (
-              <Route key="id" path={url}>
+              <Route key={id} path={url}>
                 <Navbar />
                 {page}
               </Route>

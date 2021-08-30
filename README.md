@@ -11,3 +11,7 @@
 >* Kevin: Finsished mock-up and wireframe. Also started router
 >* Jaxson: Helped with mock-up and wireframe, found logo, and started work on navbar
 >* Ilya: Helped find logo
+* Day 3 (8/30)
+>* Kevin: Git problems and live share problems
+>* Jaxson: Git problems and live share problems (cried a little)
+>* Ilya: Git problems and live share problems

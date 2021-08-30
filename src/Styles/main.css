@@ -13,7 +13,7 @@
 
 html {
   box-sizing: border-box;
-  overflow-y: scroll;
+  overflow: none;
 }
 
 main,
@@ -279,10 +279,11 @@ body {
 .landing {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 10rem;
+  padding-top: 2rem;
   overflow: hidden;
 }
-.landing h1, .landing h2 {
+.landing h1,
+.landing h2 {
   color: #222;
   text-align: center;
 }
@@ -291,4 +292,14 @@ body {
 }
 .landing h2 {
   font-size: 1.5rem;
+}
+.landing .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing .img-container img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

@@ -2,19 +2,26 @@
 @use '../util/variables' as *;
 @use '../util/mixins' as *;
 
-
-.landing{
+.landing {
   @include center-auto;
-  padding-top: 10rem;
+  padding-top: 2rem;
   overflow: hidden;
-  h1, h2{
+  h1,
+  h2 {
     color: $clr-black;
     text-align: center;
   }
-  h1{
+  h1 {
     font-size: 3rem;
   }
-  h2{
+  h2 {
     font-size: 1.5rem;
+  }
+  .img-container{
+    @include flex-center;
+    img{
+      @include box(20rem);
+      border-radius: 50%;
+    }
   }
 }
