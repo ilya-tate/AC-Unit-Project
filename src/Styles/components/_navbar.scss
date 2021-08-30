@@ -5,10 +5,13 @@
 .navbar{
   background: $clr-white;
   width: 100%;
-  height: 3rem;
+  height: 5rem;
   .nav-center{
     @include flex-between;
 
+    .logo{
+      height: 5rem;
+    }
     .nav-toggle{
       font-size: 2rem;
       margin: 0.5rem 0 0 0.5rem;
