@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import logo from "../util/logo.svg"
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false)
@@ -9,7 +10,7 @@ const Navbar = () => {
         <button onClick={() => setShowLinks(!showLinks)} className="nav-toggle">
           <GiHamburgerMenu/>
         </button>
-        <img src="#" alt="Logo" className="logo" />
+        <img src={logo} alt="Logo" className="logo" />
       </div>
     </nav>
   );

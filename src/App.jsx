@@ -1,4 +1,4 @@
-import { Home } from "./Pages";
+import { Landing } from "./Pages";
 import { Route, Switch } from "react-router-dom";
 import { links } from "./util/consts";
 import { Navbar } from "./Components";
@@ -8,11 +8,11 @@ function App() {
     <>
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Landing />
         </Route>
 
         {links
-          .filter((link) => link.text !== "Home")
+          .filter((link) => link.text !== "Landing")
           .map((link) => {
             const { id, url, page, text } = link;
             return (

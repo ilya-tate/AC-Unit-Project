@@ -1,17 +1,11 @@
-import { About, Contact, Home, Gallery, Error, Services } from "../Pages";
+import { Landing, Contact, Gallery, Error, Services } from "../Pages";
 
 export const links = [
   {
-    id: 1,
-    url: "/",
-    text: "Home",
-    page: <Home />,
-  },
-  {
     id: 2,
-    url: "/about",
-    text: "About",
-    page: <About />,
+    url: "/landing",
+    text: "Landing",
+    page: <Landing />,
   },
   {
     id: 3,
