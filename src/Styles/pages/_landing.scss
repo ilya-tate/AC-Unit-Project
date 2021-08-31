@@ -33,10 +33,10 @@
     }
   }
   .about-title {
+    color: $clr-black;
     margin-top: 1rem;
     margin-bottom: 0rem;
     text-align: center;
-    color: $clr-black;
   }
   .about {
     text-align: center;
@@ -48,16 +48,23 @@
   .contact {
     text-align: center;
     width: 170px;
+    background: $clr-primary-2;
     color: $clr-white;
     border-radius: $radius;
-    background-color: $clr-black;
     font-size: 1.6rem;
+    transition: $transition;
+
+    &:hover{
+      background: $clr-primary-1;
+      color: $clr-grey-8;
+    }
   }
 }
 
 @include tablet{
   .big-container{
     @include flex-center;
+    padding-top: 2rem;
     .about-container{
       float: right;
       display: flex;
@@ -66,7 +73,7 @@
     }
     .img-container{
       img{
-        @include box(500px, 250px)
+        @include box(500px, 300px)
       }
     }
   }

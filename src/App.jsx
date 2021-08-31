@@ -1,6 +1,6 @@
 import { Landing } from "./Pages";
 import { Route, Switch } from "react-router-dom";
-import { links } from "./util/consts";
+import { links } from "./util/consts";  
 import { Navbar } from "./Components";
 
 function App() {

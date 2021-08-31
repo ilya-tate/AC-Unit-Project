@@ -315,10 +315,10 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 .landing .about-title {
+  color: #222;
   margin-top: 1rem;
   margin-bottom: 0rem;
   text-align: center;
-  color: #222;
 }
 .landing .about {
   text-align: center;
@@ -333,10 +333,15 @@ body {
 .contact-container .contact {
   text-align: center;
   width: 170px;
+  background: #972626;
   color: #fff;
   border-radius: 0.25rem;
-  background-color: #222;
   font-size: 1.6rem;
+  transition: all 0.1s linear;
+}
+.contact-container .contact:hover {
+  background: #761e1e;
+  color: #c5cfd8;
 }
 
 @media only screen and (min-width: 768px) {
@@ -344,6 +349,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
   }
   .big-container .about-container {
     float: right;
@@ -353,6 +359,6 @@ body {
   }
   .big-container .img-container img {
     width: 500px;
-    height: 250px;
+    height: 300px;
   }
 }/*# sourceMappingURL=main.css.map */
