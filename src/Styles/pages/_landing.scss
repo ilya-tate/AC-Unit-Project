@@ -6,7 +6,7 @@
   padding: 2rem;
   @include center-auto;
   overflow: hidden;
-  .title-container{
+  .title-container {
     display: flex;
     flex-direction: column;
     h1,
@@ -27,53 +27,63 @@
       @include box(260px, 130px);
       box-shadow: $light-shadow;
       transition: $transition;
-      &:hover{
+      &:hover {
         box-shadow: $dark-shadow;
       }
     }
   }
-  .about-title {
-    color: $clr-black;
-    margin-top: 1rem;
-    margin-bottom: 0rem;
-    text-align: center;
-  }
-  .about {
-    text-align: center;
-    color: $clr-black;
-  }
-}
-.contact-container {
-  @include flex-center;
-  .contact {
-    text-align: center;
-    width: 170px;
-    background: $clr-primary-2;
-    color: $clr-white;
-    border-radius: $radius;
-    font-size: 1.6rem;
-    transition: $transition;
-
-    &:hover{
-      background: $clr-primary-1;
-      color: $clr-grey-8;
+  .about-container {
+    .about-title {
+      color: $clr-black;
+      margin-top: 1rem;
+      margin-bottom: 0rem;
+      text-align: center;
+    }
+    .about {
+      text-align: center;
+      color: $clr-black;
     }
   }
-}
-
-@include tablet{
-  .big-container{
+  .experience-container {
+    .experience-title {
+      color: $clr-black;
+      margin-top: 1rem;
+      margin-bottom: 0rem;
+      text-align: center;
+    }
+    ul {
+      width: 50vw;
+      max-width: 600px;
+      list-style: disc;
+      margin-left: 2rem;
+      color: $clr-black;
+    }
+  }
+  .contact-container {
     @include flex-center;
-    padding-top: 2rem;
-    .about-container{
-      float: right;
-      display: flex;
-      flex-direction: column;
-      width: 600px;
+    .contact {
+      text-align: center;
+      width: 170px;
+      background: $clr-primary-2;
+      color: $clr-white;
+      border-radius: $radius;
+      font-size: 1.6rem;
+      transition: $transition;
+      outline: none;
+  
+      &:hover {
+        background: $clr-primary-1;
+        color: $clr-grey-8;
+      }
     }
-    .img-container{
-      img{
-        @include box(500px, 300px)
+  }
+}
+
+@include tablet {
+  .landing {
+    .img-container {
+      img {
+        @include box(500px, 300px);
       }
     }
   }

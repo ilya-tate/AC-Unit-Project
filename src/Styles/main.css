@@ -314,18 +314,30 @@ body {
 .landing .img-container img:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-.landing .about-title {
+.landing .about-container .about-title {
   color: #222;
   margin-top: 1rem;
   margin-bottom: 0rem;
   text-align: center;
 }
-.landing .about {
+.landing .about-container .about {
   text-align: center;
   color: #222;
 }
-
-.contact-container {
+.landing .experience-container .experience-title {
+  color: #222;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  text-align: center;
+}
+.landing .experience-container ul {
+  width: 50vw;
+  max-width: 600px;
+  list-style: disc;
+  margin-left: 2rem;
+  color: #222;
+}
+.landing .contact-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -392,7 +404,7 @@ body {
     font-size: 1.3rem;
 =======
 }
-.contact-container .contact {
+.landing .contact-container .contact {
   text-align: center;
   width: 170px;
   background: #972626;
@@ -400,26 +412,15 @@ body {
   border-radius: 0.25rem;
   font-size: 1.6rem;
   transition: all 0.1s linear;
+  outline: none;
 }
-.contact-container .contact:hover {
+.landing .contact-container .contact:hover {
   background: #761e1e;
   color: #c5cfd8;
 }
 
 @media only screen and (min-width: 768px) {
-  .big-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 2rem;
-  }
-  .big-container .about-container {
-    float: right;
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-  }
-  .big-container .img-container img {
+  .landing .img-container img {
     width: 500px;
     height: 300px;
 >>>>>>> main
