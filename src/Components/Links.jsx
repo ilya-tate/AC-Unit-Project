@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Links = () => {
   return (
     <ul className="link-list">
-      { links.filter(link => link.text !== 'Error').map(link => {
+      { links.filter(link => link.text !gi== 'Error').map(link => {
         const { id, url, text } = link;
         return (
           <li key={ id }>

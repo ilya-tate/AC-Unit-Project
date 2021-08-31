@@ -1,0 +1,81 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
+.contact-container {
+  @include flex-center;
+  flex-direction: column;
+  .title {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  .content {
+    justify-content: center;
+    text-align: center;
+
+    img {
+      box-shadow: $light-shadow;
+      transition: $transition;
+      &:hover {
+        box-shadow: $dark-shadow;
+      }
+    }
+
+    h3 {
+      font-size: 2rem;
+      text-align: center;
+      padding: 1rem;
+      font-weight: 500;
+    }
+
+    .address {
+      padding-bottom: rem;
+      font-size: 1.3rem;
+    }
+
+    .phone {
+      button {
+        background: $clr-primary-2;
+        color: $clr-white;
+        width: 10rem;
+        height: 3rem;
+        border-radius: $radius;
+        transition: $transition;
+        &:hover {
+          background-color: $clr-primary-1;
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .contact-container {
+    .title {
+      font-size: 3rem;
+      padding: 3rem 0;
+    }
+    .content {
+      .img-text {
+        display: flex;
+        align-items: center;
+        .text {
+          margin-left: 5rem;
+          margin-top: 4rem;
+        }
+        img {
+          width: 50vw;
+        }
+      }
+
+      .phone {
+        button {
+          width: 15rem;
+          height: 4rem;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
