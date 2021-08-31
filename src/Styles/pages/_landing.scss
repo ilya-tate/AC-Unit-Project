@@ -17,21 +17,36 @@
   h2 {
     font-size: 1rem;
   }
-  .img-container{
+  .img-container {
     @include flex-center;
-    img{
+    img {
       @include box(260px, 130px);
-      border: 1.5px solid $clr-black;
+      box-shadow: $light-shadow;
+      transition: $transition;
+      &:hover{
+        box-shadow: $dark-shadow;
+      }
     }
   }
-  .about-title{
+  .about-title {
     margin-top: 1rem;
     margin-bottom: 0rem;
     text-align: center;
     color: $clr-black;
   }
-  .about{
+  .about {
     text-align: center;
     color: $clr-black;
+  }
+  .contact-container {
+    @include flex-center;
+    .contact {
+      text-align: center;
+      width: 170px;
+      color: $clr-white;
+      border-radius: $radius;
+      background-color: $clr-black;
+      font-size: 1.6rem;
+    }
   }
 }

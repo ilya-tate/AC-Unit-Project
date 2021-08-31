@@ -272,8 +272,7 @@ body {
   height: 5rem;
   padding: 0;
   width: 15%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .navbar .nav-center .nav-toggle {
   font-size: 2rem;
@@ -305,7 +304,11 @@ body {
 .landing .img-container img {
   width: 260px;
   height: 130px;
-  border: 1.5px solid #222;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s linear;
+}
+.landing .img-container img:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 .landing .about-title {
   margin-top: 1rem;
@@ -316,4 +319,17 @@ body {
 .landing .about {
   text-align: center;
   color: #222;
+}
+.landing .contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing .contact-container .contact {
+  text-align: center;
+  width: 170px;
+  color: #fff;
+  border-radius: 0.25rem;
+  background-color: #222;
+  font-size: 1.6rem;
 }/*# sourceMappingURL=main.css.map */
