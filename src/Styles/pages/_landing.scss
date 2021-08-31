@@ -6,16 +6,20 @@
   padding: 2rem;
   @include center-auto;
   overflow: hidden;
-  h1,
-  h2 {
-    color: $clr-black;
-    text-align: center;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1rem;
+  .title-container{
+    display: flex;
+    flex-direction: column;
+    h1,
+    h2 {
+      color: $clr-black;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
   }
   .img-container {
     @include flex-center;
@@ -38,15 +42,32 @@
     text-align: center;
     color: $clr-black;
   }
-  .contact-container {
+}
+.contact-container {
+  @include flex-center;
+  .contact {
+    text-align: center;
+    width: 170px;
+    color: $clr-white;
+    border-radius: $radius;
+    background-color: $clr-black;
+    font-size: 1.6rem;
+  }
+}
+
+@include tablet{
+  .big-container{
     @include flex-center;
-    .contact {
-      text-align: center;
-      width: 170px;
-      color: $clr-white;
-      border-radius: $radius;
-      background-color: $clr-black;
-      font-size: 1.6rem;
+    .about-container{
+      float: right;
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+    }
+    .img-container{
+      img{
+        @include box(500px, 250px)
+      }
     }
   }
 }

@@ -285,15 +285,19 @@ body {
   margin-right: auto;
   overflow: hidden;
 }
-.landing h1,
-.landing h2 {
+.landing .title-container {
+  display: flex;
+  flex-direction: column;
+}
+.landing .title-container h1,
+.landing .title-container h2 {
   color: #222;
   text-align: center;
 }
-.landing h1 {
+.landing .title-container h1 {
   font-size: 2rem;
 }
-.landing h2 {
+.landing .title-container h2 {
   font-size: 1rem;
 }
 .landing .img-container {
@@ -320,16 +324,35 @@ body {
   text-align: center;
   color: #222;
 }
-.landing .contact-container {
+
+.contact-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.landing .contact-container .contact {
+.contact-container .contact {
   text-align: center;
   width: 170px;
   color: #fff;
   border-radius: 0.25rem;
   background-color: #222;
   font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .big-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .big-container .about-container {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+  }
+  .big-container .img-container img {
+    width: 500px;
+    height: 250px;
+  }
 }/*# sourceMappingURL=main.css.map */
