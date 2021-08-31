@@ -270,6 +270,10 @@ body {
 }
 .navbar .nav-center .logo {
   height: 5rem;
+  padding: 0;
+  width: 15%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .navbar .nav-center .nav-toggle {
   font-size: 2rem;
