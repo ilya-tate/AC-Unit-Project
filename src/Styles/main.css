@@ -316,4 +316,71 @@ body {
 .landing .about {
   text-align: center;
   color: #222;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-container .title {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+.contact-container .content {
+  justify-content: center;
+  text-align: center;
+}
+.contact-container .content img {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s linear;
+}
+.contact-container .content img:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.contact-container .content h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 500;
+}
+.contact-container .content .address {
+  padding-bottom: rem;
+  font-size: 1.3rem;
+}
+.contact-container .content .phone button {
+  background: #972626;
+  color: #fff;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.25rem;
+  transition: all 0.1s linear;
+}
+.contact-container .content .phone button:hover {
+  background-color: #761e1e;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-container .title {
+    font-size: 3rem;
+    padding: 3rem 0;
+  }
+  .contact-container .content .img-text {
+    display: flex;
+    align-items: center;
+  }
+  .contact-container .content .img-text .text {
+    margin-left: 5rem;
+    margin-top: 4rem;
+  }
+  .contact-container .content .img-text img {
+    width: 50vw;
+  }
+  .contact-container .content .phone button {
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.3rem;
+  }
 }/*# sourceMappingURL=main.css.map */
