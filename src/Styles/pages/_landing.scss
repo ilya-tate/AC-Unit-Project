@@ -3,8 +3,8 @@
 @use '../util/mixins' as *;
 
 .landing {
+  padding: 2rem;
   @include center-auto;
-  padding-top: 2rem;
   overflow: hidden;
   h1,
   h2 {
@@ -12,16 +12,26 @@
     text-align: center;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .img-container{
     @include flex-center;
     img{
-      @include box(20rem);
-      border-radius: 50%;
+      @include box(260px, 130px);
+      border: 1.5px solid $clr-black;
     }
+  }
+  .about-title{
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    color: $clr-black;
+  }
+  .about{
+    text-align: center;
+    color: $clr-black;
   }
 }
