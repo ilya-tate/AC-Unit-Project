@@ -5,30 +5,30 @@ const About = () => {
   return (
     <>
       <div className="landing">
-        <div className="title-container">
-          <h1>RV AC Repairs</h1>
-          <h2>We live in a hot state</h2>
-        </div>
-
         <div className="img-container">
-          <img
-            src="https://picsum.photos/500/300?grayscale"
-            alt="Landing Picture"
-          />
+          <img src="https://picsum.photos/1000/400" alt="Landing Picture" />
         </div>
-        <div className="about-container">
-          <h3 className="title about-title">About</h3>
-          <p className="about">
-            Est do cillum elit sunt culpa Lorem. Eu ex do minim culpa excepteur
-            nisi nisi. Laborum consectetur id ex fugiat ad amet Lorem.
-          </p>
-        </div>
-        <div className="experience-container">
-          <h3 className="experience-title">Experience</h3>
-          <ul>
-            <li>Lorem</li>
-            <li>Ipsum</li>
-          </ul>
+        <div className="text-container">
+          <div className="about-container">
+            <h3 className="title about-title">About</h3>
+            <p className="about">
+              Est do cillum elit sunt culpa Lorem. Eu ex do minim culpa
+              excepteur nisi nisi. Laborum consectetur id ex fugiat ad amet
+              Lorem.
+            </p>
+          </div>
+          <div className="experience-container">
+            <h3 className="experience-title">Experience</h3>
+            <ul>
+              <li>
+                Voluptate anim commodo cillum pariatur velit minim velit
+                cupidatat sunt cupidatat.
+              </li>
+              <li>
+                Ex occaecat laboris laborum voluptate culpa in voluptate sunt.
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="contact-container">
           <Link to="/contact" className="contact">

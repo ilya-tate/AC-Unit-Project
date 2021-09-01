@@ -13,7 +13,7 @@ function App() {
         </Route>
 
         {links
-          .filter((link) => link.text !== "Landing")
+          .filter((link) => link.text !== "Home")
           .map((link) => {
             const { id, url, page } = link;
             return (
