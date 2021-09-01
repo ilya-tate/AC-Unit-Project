@@ -8,7 +8,7 @@ const Links = () => {
         const { id, url, text } = link;
         return (
           <li key={ id }>
-            <Link to={ url }>{ text }</Link>
+            <Link className="link" to={ url }>{ text }</Link>
           </li>
         );
       }) }
