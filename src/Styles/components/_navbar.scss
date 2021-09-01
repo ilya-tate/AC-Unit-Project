@@ -33,12 +33,12 @@
     position: absolute;
     box-shadow: $dark-shadow;
     top: 0;
-		left: -60vw;
-		transition: $transition;
+    left: -60vw;
+    transition: $transition;
 
-		&.showing{
-			left: 0;
-		}
+    &.showing {
+      left: 0;
+    }
 
     .nav-toggle {
       font-size: 2.1rem;
@@ -50,20 +50,45 @@
     .link-list {
       margin-top: 5rem;
       li {
-				width: 100%;
-				color: $clr-black;
-				height: 4rem;
-				border-bottom: 2px solid $clr-black;
-				font-size: 2rem;
-				text-align: center;
-				.link{
-					color: $clr-black;
-					&:hover{
-						color: $clr-primary-2;
-					}
-				}
+        width: 100%;
+        color: $clr-black;
+        height: 4rem;
+        border-bottom: 2px solid $clr-black;
+        font-size: 2rem;
+        text-align: center;
+        .link {
+          color: $clr-black;
+          &:hover {
+            color: $clr-primary-2;
+          }
+        }
       }
     }
   }
 }
 
+@include tablet {
+  .navbar {
+    .nav-center {
+      .logo {
+        height: 6rem;
+        padding: 0;
+        width: 5%;
+        object-fit: cover;
+      }
+    }
+
+    .sliding {
+      width: 15vw;
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: -15vw;
+      transition: $transition;
+
+      &.showing {
+        left: 0;
+      }
+    }
+  }
+}
