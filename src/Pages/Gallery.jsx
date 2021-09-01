@@ -16,11 +16,7 @@ const Gallery = () => {
           ad deserunt tempor aliquip Lorem tempor minim cupidatat. Dolore ex
           deserunt nulla aute tempor sunt id ipsum minim mollit officia
           adipisicing. Ex qui adipisicing cillum pariatur sit labore proident
-          aliquip eu est tempor nisi. Veniam tempor anim est proident. Nostrud
-          velit enim culpa reprehenderit ad voluptate aliquip consectetur.
-          Consequat laboris sint sint incididunt laboris culpa est tempor nulla
-          aliquip cupidatat fugiat. Ea irure qui consectetur minim proident
-          reprehenderit qui amet. Reprehenderit culpa aute labore pariatur.
+          aliquip eu est tempor nisi. Veniam tempor anim est proident.
         </p>
       </section>
       <section className="wrapper reverse">
@@ -32,12 +28,7 @@ const Gallery = () => {
           Ex Lorem tempor labore consequat commodo aute amet. Eiusmod ipsum et
           ad deserunt tempor aliquip Lorem tempor minim cupidatat. Dolore ex
           deserunt nulla aute tempor sunt id ipsum minim mollit officia
-          adipisicing. Ex qui adipisicing cillum pariatur sit labore proident
-          aliquip eu est tempor nisi. Veniam tempor anim est proident. Nostrud
-          velit enim culpa reprehenderit ad voluptate aliquip consectetur.
-          Consequat laboris sint sint incididunt laboris culpa est tempor nulla
-          aliquip cupidatat fugiat. Ea irure qui consectetur minim proident
-          reprehenderit qui amet. Reprehenderit culpa aute labore pariatur.
+          adipisicing.
         </p>
         <img src="https://picsum.photos/600/399" alt="" />
       </section>
@@ -52,11 +43,7 @@ const Gallery = () => {
           ad deserunt tempor aliquip Lorem tempor minim cupidatat. Dolore ex
           deserunt nulla aute tempor sunt id ipsum minim mollit officia
           adipisicing. Ex qui adipisicing cillum pariatur sit labore proident
-          aliquip eu est tempor nisi. Veniam tempor anim est proident. Nostrud
-          velit enim culpa reprehenderit ad voluptate aliquip consectetur.
-          Consequat laboris sint sint incididunt laboris culpa est tempor nulla
-          aliquip cupidatat fugiat. Ea irure qui consectetur minim proident
-          reprehenderit qui amet. Reprehenderit culpa aute labore pariatur.
+          aliquip eu est tempor nisi.
         </p>
       </section>
     </div>
