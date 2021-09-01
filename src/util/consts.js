@@ -21,12 +21,6 @@ export const links = [
   },
   {
     id: 4,
-    url: '/services',
-    text: 'Services',
-    page: <Services />,
-  },
-  {
-    id: 5,
     url: '*',
     text: 'Error',
     page: <Error />,
