@@ -341,7 +341,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
+}
+.landing .contact-container .contact {
+  text-align: center;
+  width: 170px;
+  background: #972626;
+  color: #fff;
+  border-radius: 0.25rem;
+  font-size: 1.6rem;
+  transition: all 0.1s linear;
+  outline: none;
+}
+.landing .contact-container .contact:hover {
+  background: #761e1e;
+  color: #c5cfd8;
+}
+
+@media only screen and (min-width: 768px) {
+  .landing .img-container img {
+    width: 500px;
+    height: 300px;
+  }
+}
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 .contact-container .title {
@@ -402,27 +427,5 @@ body {
     width: 15rem;
     height: 4rem;
     font-size: 1.3rem;
-=======
-}
-.landing .contact-container .contact {
-  text-align: center;
-  width: 170px;
-  background: #972626;
-  color: #fff;
-  border-radius: 0.25rem;
-  font-size: 1.6rem;
-  transition: all 0.1s linear;
-  outline: none;
-}
-.landing .contact-container .contact:hover {
-  background: #761e1e;
-  color: #c5cfd8;
-}
-
-@media only screen and (min-width: 768px) {
-  .landing .img-container img {
-    width: 500px;
-    height: 300px;
->>>>>>> main
   }
 }/*# sourceMappingURL=main.css.map */

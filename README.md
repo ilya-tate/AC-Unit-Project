@@ -15,3 +15,11 @@
 >* Kevin: Git problems and live share problems
 >* Jaxson: Git problems and live share problems (cried a little)
 >* Ilya: Git problems and live share problems
+* Day 4 (8/31)
+>* Kevin: Made the landing page responsive and look nice
+>* Jaxson: Made the contact page look nice
+>* Ilya: Made the navbar work
+* Day 5 (9/1)
+>* Kevin:
+>* Jaxson: 
+>* Ilya: 
