@@ -20,6 +20,6 @@
 >* Jaxson: Made the contact page look nice
 >* Ilya: Made the navbar work
 * Day 5 (9/1)
->* Kevin:
->* Jaxson: 
->* Ilya: 
+>* Kevin: Updated colors and landing page
+>* Jaxson: Made the gallery 
+>* Ilya: Made the error page
