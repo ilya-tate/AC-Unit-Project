@@ -273,8 +273,7 @@ body {
   height: 5rem;
   padding: 0;
   width: 15%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .navbar .nav-center .nav-toggle {
   font-size: 2rem;
@@ -340,20 +339,25 @@ body {
 .landing .img-container img:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
+.landing .text-container {
+  margin-top: 1rem;
+}
+.landing .text-container .about-container {
+  background: white;
+}
 .landing .text-container .about-container .about-title {
   color: #222;
-  margin-top: 1rem;
-  margin-bottom: 0rem;
   text-align: center;
 }
 .landing .text-container .about-container .about {
   text-align: center;
   color: #222;
 }
+.landing .text-container .experience-container {
+  background: white;
+}
 .landing .text-container .experience-container .experience-title {
   color: #222;
-  margin-top: 1rem;
-  margin-bottom: 0rem;
   text-align: center;
 }
 .landing .text-container .experience-container ul {
@@ -387,10 +391,24 @@ body {
 @media only screen and (min-width: 768px) {
   .landing .text-container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: baseline;
+    height: auto;
+  }
+  .landing .text-container .about-container {
+    height: 100%;
+    width: 30vw;
+  }
+  .landing .text-container .experience-container {
+    height: 100%;
+    width: 30vw;
   }
   .landing .text-container .experience-container ul {
     width: auto;
+  }
+  .landing .contact-container {
+    margin-top: 1rem;
   }
 }
 .contact-container {
