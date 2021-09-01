@@ -6,7 +6,7 @@ const About = () => {
     <>
       <div className="landing">
         <div className="img-container">
-          <img src="https://picsum.photos/1000/400" alt="Landing Picture" />
+          <img src="https://picsum.photos/1000/400" />
         </div>
         <div className="text-container">
           <div className="about-container">
