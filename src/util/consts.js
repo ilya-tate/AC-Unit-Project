@@ -1,40 +1,34 @@
-import { About, Contact, Home, Gallery, Error, Services } from "../Pages";
+import { Error, Landing, Contact, Gallery, Services } from "../Pages";
 
 export const links = [
   {
     id: 1,
-    url: "/",
-    text: "Home",
-    page: <Home />,
+    url: '/',
+    text: 'Landing',
+    page: <Landing />,
   },
   {
     id: 2,
-    url: "/about",
-    text: "About",
-    page: <About />,
-  },
-  {
-    id: 3,
-    url: "/contact",
-    text: "Contact",
+    url: '/contact',
+    text: 'Contact',
     page: <Contact />,
   },
   {
-    id: 4,
-    url: "/gallery",
-    text: "Gallery",
+    id: 3,
+    url: '/gallery',
+    text: 'Gallery',
     page: <Gallery />,
   },
   {
-    id: 5,
-    url: "/services",
-    text: "Services",
+    id: 4,
+    url: '/services',
+    text: 'Services',
     page: <Services />,
   },
   {
-    id: 6,
-    url: "*",
-    text: "Error",
+    id: 5,
+    url: '*',
+    text: 'Error',
     page: <Error />,
-  },
+  }
 ];

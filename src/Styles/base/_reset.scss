@@ -16,7 +16,8 @@ html {
   box-sizing: border-box;
 
   // Forces the vertical scroll bar to prevent a jumpy page
-  overflow-y: scroll;
+  // overflow-y: scroll;
+  overflow: none;
 }
 
 main,

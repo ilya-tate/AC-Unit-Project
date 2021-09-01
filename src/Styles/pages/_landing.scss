@@ -1,0 +1,90 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
+.landing {
+  padding: 2rem;
+  @include center-auto;
+  overflow: hidden;
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    h1,
+    h2 {
+      color: $clr-black;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  }
+  .img-container {
+    @include flex-center;
+    img {
+      @include box(260px, 130px);
+      box-shadow: $light-shadow;
+      transition: $transition;
+      &:hover {
+        box-shadow: $dark-shadow;
+      }
+    }
+  }
+  .about-container {
+    .about-title {
+      color: $clr-black;
+      margin-top: 1rem;
+      margin-bottom: 0rem;
+      text-align: center;
+    }
+    .about {
+      text-align: center;
+      color: $clr-black;
+    }
+  }
+  .experience-container {
+    .experience-title {
+      color: $clr-black;
+      margin-top: 1rem;
+      margin-bottom: 0rem;
+      text-align: center;
+    }
+    ul {
+      width: 50vw;
+      max-width: 600px;
+      list-style: disc;
+      margin-left: 2rem;
+      color: $clr-black;
+    }
+  }
+  .contact-container {
+    @include flex-center;
+    .contact {
+      text-align: center;
+      width: 170px;
+      background: $clr-primary-2;
+      color: $clr-white;
+      border-radius: $radius;
+      font-size: 1.6rem;
+      transition: $transition;
+      outline: none;
+  
+      &:hover {
+        background: $clr-primary-1;
+        color: $clr-grey-8;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .landing {
+    .img-container {
+      img {
+        @include box(500px, 300px);
+      }
+    }
+  }
+}
