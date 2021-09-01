@@ -7,8 +7,7 @@
 import Landing from './Landing'
 import Contact from './Contact'
 import Gallery from './Gallery'
-import Services from './Services'
 import Error from './Error'
 
 // export {Home, Cart, About, Error, Products}
-export {Landing, Contact, Gallery, Services, Error}
+export {Landing, Contact, Gallery, Error}
