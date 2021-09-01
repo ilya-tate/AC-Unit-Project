@@ -273,7 +273,8 @@ body {
   height: 5rem;
   padding: 0;
   width: 15%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .navbar .nav-center .nav-toggle {
   font-size: 2rem;
