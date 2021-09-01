@@ -12,18 +12,13 @@
   .img-container {
     @include flex-center;
     img {
+      height: 50vh;
       width: 80vw;
-      box-shadow: $light-shadow;
-      transition: $transition;
-      &:hover {
-        box-shadow: $dark-shadow;
-      }
     }
   }
   .text-container {
     margin-top: 1rem;
     .about-container {
-      background: white;
       .about-title {
         color: $clr-black;
         text-align: center;
@@ -34,7 +29,6 @@
       }
     }
     .experience-container {
-      background: white;
       .experience-title {
         color: $clr-black;
         text-align: center;

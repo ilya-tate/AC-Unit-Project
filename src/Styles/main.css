@@ -275,6 +275,10 @@ body {
   width: 15%;
   object-fit: cover;
 }
+.navbar .nav-center h1 {
+  color: #222;
+  font-size: 1rem;
+}
 .navbar .nav-center .nav-toggle {
   font-size: 2rem;
   margin: 0.5rem 0 0 0.5rem;
@@ -332,18 +336,11 @@ body {
   justify-content: center;
 }
 .landing .img-container img {
+  height: 50vh;
   width: 80vw;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.1s linear;
-}
-.landing .img-container img:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 .landing .text-container {
   margin-top: 1rem;
-}
-.landing .text-container .about-container {
-  background: white;
 }
 .landing .text-container .about-container .about-title {
   color: #222;
@@ -352,9 +349,6 @@ body {
 .landing .text-container .about-container .about {
   text-align: center;
   color: #222;
-}
-.landing .text-container .experience-container {
-  background: white;
 }
 .landing .text-container .experience-container .experience-title {
   color: #222;

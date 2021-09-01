@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import rick from '../util/roll.png'
 
 const About = () => {
   return (
     <>
       <div className="landing">
         <div className="img-container">
-          <img src="https://picsum.photos/1000/400" alt="Landing Picture" />
+          <img src={rick} alt = "rick"/>
         </div>
         <div className="text-container">
           <div className="about-container">

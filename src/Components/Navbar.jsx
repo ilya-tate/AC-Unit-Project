@@ -12,6 +12,9 @@ const Navbar = () => {
         <button onClick={() => setShowLinks(!showLinks)} className="nav-toggle">
           <GiHamburgerMenu />
         </button>
+        <h1>
+          RV AC Repair
+        </h1>
         <img src={logo} alt="Logo" className="logo" />
       </div>
         <div className={showLinks ? "showing sliding" : "sliding"} >
