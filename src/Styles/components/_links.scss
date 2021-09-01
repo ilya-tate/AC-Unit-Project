@@ -1,0 +1,26 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
+.link-list {
+  margin-top: 5rem;
+  li {
+    width: 100%;
+    color: $clr-black;
+    height: 4rem;
+    border-bottom: 2px solid lightgrey;
+    font-size: 2rem;
+    text-align: center;
+    .link {
+      font-weight: bold;
+      color: lightgrey;
+      transition: 0.1s all;
+      &:hover {
+        color: $clr-primary-2;
+      }
+    }
+    &:last-of-type{
+      border-bottom: none;
+    }
+  }
+}

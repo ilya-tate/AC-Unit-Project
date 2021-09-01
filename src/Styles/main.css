@@ -252,7 +252,7 @@ main {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: #8d99a5;
+  background: lightgrey;
   color: #972626;
   line-height: 1.5;
   font-size: 0.875rem;
@@ -260,7 +260,8 @@ body {
 }
 
 .navbar {
-  background: #657381;
+  background: #424040;
+  color: #fff;
   width: 100%;
   height: 5rem;
 }
@@ -275,19 +276,22 @@ body {
   width: 15%;
   object-fit: cover;
 }
-.navbar .nav-center h1 {
-  color: #222;
-  font-size: 2rem;
-  margin: 0;
-}
 .navbar .nav-center .nav-toggle {
   font-size: 2rem;
-  margin: 0.5rem 0 0 0.5rem;
+  margin-left: 2vw;
+}
+.navbar .nav-center .nav-toggle svg {
+  fill: lightgrey;
+  transition: 0.2s all linear;
+}
+.navbar .nav-center .nav-toggle svg:hover {
+  fill: #972626;
 }
 .navbar .sliding {
+  background: #424040;
+  color: lightgrey;
   height: 100vh;
   width: 60vw;
-  background: #fff;
   z-index: 0;
   position: absolute;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -304,22 +308,55 @@ body {
   position: absolute;
   right: 0;
 }
-.navbar .sliding .link-list {
+.navbar .sliding .nav-toggle svg {
+  fill: lightgrey;
+  transition: 0.2s all linear;
+}
+.navbar .sliding .nav-toggle svg:hover {
+  fill: #972626;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar .nav-center .logo {
+    height: 6rem;
+    padding: 0;
+    width: 5%;
+    object-fit: cover;
+  }
+  .navbar .sliding {
+    position: fixed;
+    width: 15vw;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: -15vw;
+    transition: all 0.1s linear;
+  }
+  .navbar .sliding.showing {
+    left: 0;
+  }
+}
+.link-list {
   margin-top: 5rem;
 }
-.navbar .sliding .link-list li {
+.link-list li {
   width: 100%;
   color: #222;
   height: 4rem;
-  border-bottom: 2px solid #222;
+  border-bottom: 2px solid lightgrey;
   font-size: 2rem;
   text-align: center;
 }
-.navbar .sliding .link-list li .link {
-  color: #222;
+.link-list li .link {
+  font-weight: bold;
+  color: lightgrey;
+  transition: 0.1s all;
 }
-.navbar .sliding .link-list li .link:hover {
+.link-list li .link:hover {
   color: #972626;
+}
+.link-list li:last-of-type {
+  border-bottom: none;
 }
 
 .landing {
@@ -470,5 +507,56 @@ body {
     width: 15rem;
     height: 4rem;
     font-size: 1.3rem;
+  }
+}
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery-container h1 {
+  margin-top: 1rem;
+}
+.gallery-container .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.gallery-container .wrapper p {
+  width: 80vw;
+  margin-top: 2rem;
+}
+.gallery-container .wrapper img {
+  width: 90vw;
+}
+.gallery-container .wrapper.reverse {
+  flex-direction: column-reverse;
+}
+
+@media only screen and (min-width: 768px) {
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery-container h1 {
+    margin-top: 1rem;
+  }
+  .gallery-container .wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+    font-size: 1.3rem;
+  }
+  .gallery-container .wrapper p {
+    width: 30vw;
+    margin: 3rem 3rem 0 3rem;
+  }
+  .gallery-container .wrapper img {
+    width: 45vw;
+  }
+  .gallery-container .wrapper.reverse {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=main.css.map */
