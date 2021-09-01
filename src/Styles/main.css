@@ -273,7 +273,8 @@ body {
   height: 5rem;
   padding: 0;
   width: 15%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .navbar .nav-center h1 {
   color: #222;
@@ -470,4 +471,11 @@ body {
     height: 4rem;
     font-size: 1.3rem;
   }
+}
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 7rem;
 }/*# sourceMappingURL=main.css.map */

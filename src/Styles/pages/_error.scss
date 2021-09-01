@@ -4,4 +4,6 @@
 
 .error-container {
   @include flex-center;
+  flex-direction: column;
+  padding-top: 7rem;
 }
