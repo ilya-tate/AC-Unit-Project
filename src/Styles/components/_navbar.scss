@@ -2,22 +2,64 @@
 @use '../util/variables' as *;
 @use '../util/mixins' as *;
 
-.navbar{
+.navbar {
   background: $clr-white;
   width: 100%;
   height: 5rem;
-  .nav-center{
+  .nav-center {
     @include flex-between;
 
-    .logo{
+    .logo {
       height: 5rem;
       padding: 0;
       width: 15%;
       object-fit: cover;
     }
-    .nav-toggle{
+    .nav-toggle {
       font-size: 2rem;
       margin: 0.5rem 0 0 0.5rem;
     }
   }
+
+  .sliding {
+    height: 100vh;
+    width: 60vw;
+    background: $clr-white;
+    z-index: 0;
+    position: absolute;
+    box-shadow: $dark-shadow;
+    top: 0;
+		left: -60vw;
+		transition: $transition;
+
+		&.showing{
+			left: 0;
+		}
+
+    .nav-toggle {
+      font-size: 2.1rem;
+      margin: 1rem 0.6rem 0 0.5rem;
+      position: absolute;
+      right: 0;
+    }
+
+    .link-list {
+      margin-top: 5rem;
+      li {
+				width: 100%;
+				color: $clr-black;
+				height: 4rem;
+				border-bottom: 2px solid $clr-black;
+				font-size: 2rem;
+				text-align: center;
+				.link{
+					color: $clr-black;
+					&:hover{
+						color: $clr-primary-2;
+					}
+				}
+      }
+    }
+  }
 }
+

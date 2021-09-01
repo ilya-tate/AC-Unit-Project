@@ -256,7 +256,6 @@ body {
   color: #972626;
   line-height: 1.5;
   font-size: 0.875rem;
-  z-index: -1;
 }
 
 .navbar {
@@ -273,48 +272,12 @@ body {
   height: 5rem;
   padding: 0;
   width: 15%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .navbar .nav-center .nav-toggle {
   font-size: 2rem;
   margin: 0.5rem 0 0 0.5rem;
-}
-.navbar .sliding {
-  height: 100vh;
-  width: 60vw;
-  background: #fff;
-  z-index: 0;
-  position: absolute;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  top: 0;
-  left: -60vw;
-  transition: all 0.1s linear;
-}
-.navbar .sliding.showing {
-  left: 0;
-}
-.navbar .sliding .nav-toggle {
-  font-size: 2.1rem;
-  margin: 1rem 0.6rem 0 0.5rem;
-  position: absolute;
-  right: 0;
-}
-.navbar .sliding .link-list {
-  margin-top: 5rem;
-}
-.navbar .sliding .link-list li {
-  width: 100%;
-  color: #222;
-  height: 4rem;
-  border-bottom: 2px solid #222;
-  font-size: 2rem;
-  text-align: center;
-}
-.navbar .sliding .link-list li .link {
-  color: #222;
-}
-.navbar .sliding .link-list li .link:hover {
-  color: #972626;
 }
 
 .landing {
