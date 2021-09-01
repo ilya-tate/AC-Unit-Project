@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
-import Links from './Links.jsx';
+import Navbar from './Navbar';
+import Links from './Links';
 
 export { Navbar, Links };
