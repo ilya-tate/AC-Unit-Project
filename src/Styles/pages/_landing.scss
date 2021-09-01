@@ -21,11 +21,11 @@
     }
   }
   .text-container {
+    margin-top: 1rem;
     .about-container {
+      background: white;
       .about-title {
         color: $clr-black;
-        margin-top: 1rem;
-        margin-bottom: 0rem;
         text-align: center;
       }
       .about {
@@ -34,10 +34,9 @@
       }
     }
     .experience-container {
+      background: white;
       .experience-title {
         color: $clr-black;
-        margin-top: 1rem;
-        margin-bottom: 0rem;
         text-align: center;
       }
       ul {
@@ -73,13 +72,23 @@
 @include tablet {
   .landing {
     .text-container {
-      display: flex;
-      justify-content: space-between; 
+      @include flex-evenly;
+      align-items: baseline;
+      height: auto;
+      .about-container{
+        height: 100%;
+        width: 30vw;
+      }
       .experience-container {
+        height: 100%;
+        width: 30vw;
         ul{
           width: auto;
         }
       }
+    }
+    .contact-container{
+      margin-top: 1rem;
     }
   }
 }
