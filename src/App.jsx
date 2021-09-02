@@ -1,7 +1,7 @@
 import { Landing } from "./Pages";
 import { Route, Switch } from "react-router-dom";
 import { links } from "./util/consts";
-import { Navbar } from "./Components";
+import { Footer, Navbar } from "./Components";
 import React, { useState, useEffect } from 'react'
 
 
@@ -10,7 +10,6 @@ function App() {
 
   const changeSize = () => {
     setSize(window.innerWidth);
-    console.log(size);
   };
 
   useEffect(() => {
@@ -40,6 +39,7 @@ function App() {
             );
           })}
       </Switch>
+      <Footer/>
     </>
   );
 }

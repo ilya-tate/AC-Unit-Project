@@ -1,0 +1,22 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
+.footer{
+  @include flex-evenly;
+  height: 6rem;
+  margin-top: 5.5rem;
+  display: flex;
+  background: $clr-grey;
+  width: 100%;
+  color: lightgrey;
+  ul{
+    h4{
+      font-size: 1.3rem;
+      margin-bottom: 0;
+    }
+    li{
+      margin-left: 3px;
+    }
+  }
+}

@@ -43,7 +43,7 @@ const Gallery = () => {
           ad deserunt tempor aliquip Lorem tempor minim cupidatat. Dolore ex
           deserunt nulla aute tempor sunt id ipsum minim mollit officia
           adipisicing. Ex qui adipisicing cillum pariatur sit labore proident
-          aliquip eu est tempor nisi.
+          aliquip eu est tempor nisi. 
         </p>
       </section>
     </div>
