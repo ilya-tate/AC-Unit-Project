@@ -563,6 +563,7 @@ body {
   justify-content: center;
   flex-direction: column;
   padding-top: 7rem;
+  height: 65vh;
 }
 
 .gallery-container {
@@ -587,6 +588,8 @@ body {
 }
 .gallery-container .wrapper img {
   width: 90vw;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10%;
 }
 .gallery-container .wrapper.reverse {
   flex-direction: column-reverse;
@@ -610,7 +613,6 @@ body {
   }
   .gallery-container .wrapper img {
     width: 45vw;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
   .gallery-container .wrapper.reverse {
     flex-direction: row;
