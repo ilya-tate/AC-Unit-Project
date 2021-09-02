@@ -274,7 +274,8 @@ body {
   height: 5rem;
   padding: 0;
   width: 15%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .navbar .nav-center .nav-toggle {
   font-size: 2rem;
@@ -321,7 +322,8 @@ body {
     height: 6rem;
     padding: 0;
     width: 5%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .navbar .sliding {
     position: fixed;
@@ -359,6 +361,30 @@ body {
   border-bottom: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .link-list {
+    margin: 0;
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+  }
+  .link-list li {
+    border-bottom: none;
+    width: 100%;
+    color: #222;
+    height: 4rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .link-list li .link {
+    font-weight: bold;
+    color: lightgrey;
+    transition: 0.1s all;
+  }
+  .link-list li .link:hover {
+    color: #972626;
+  }
+}
 .landing {
   padding: 2rem;
   margin-left: auto;
@@ -563,6 +589,7 @@ body {
   }
   .gallery-container .wrapper img {
     width: 45vw;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
   .gallery-container .wrapper.reverse {
     flex-direction: row;
