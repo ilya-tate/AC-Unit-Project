@@ -419,6 +419,7 @@ body {
 .landing .img-container img {
   height: 50vh;
   width: 80vw;
+  border-radius: 40px;
 }
 .landing .text-container {
   margin-top: 1rem;
@@ -502,6 +503,9 @@ body {
   text-align: center;
 }
 .contact-container .content img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.1s linear;
 }
@@ -544,7 +548,8 @@ body {
     margin-top: 4rem;
   }
   .contact-container .content .img-text img {
-    width: 50vw;
+    width: 450px;
+    height: 450px;
   }
   .contact-container .content .phone button {
     width: 15rem;
@@ -567,6 +572,8 @@ body {
 }
 .gallery-container h1 {
   margin-top: 1rem;
+  font-weight: 500;
+  font-size: 3rem;
 }
 .gallery-container .wrapper {
   display: flex;
@@ -590,9 +597,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .gallery-container h1 {
-    margin-top: 1rem;
   }
   .gallery-container .wrapper {
     display: flex;
