@@ -23,3 +23,7 @@
 >* Kevin: Updated colors and landing page
 >* Jaxson: Made the gallery 
 >* Ilya: Made the error page
+* Day 6 (9/2)
+>* Kevin: Finished the final styling for landing and added the footer
+>* Jaxson: Finished the desktop navbar 
+>* Ilya: Found fonts?
