@@ -359,6 +359,30 @@ body {
   border-bottom: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .link-list {
+    margin: 0;
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+  }
+  .link-list li {
+    border-bottom: none;
+    width: 100%;
+    color: #222;
+    height: 4rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .link-list li .link {
+    font-weight: bold;
+    color: lightgrey;
+    transition: 0.1s all;
+  }
+  .link-list li .link:hover {
+    color: #972626;
+  }
+}
 .footer {
   display: flex;
   align-items: center;
@@ -582,6 +606,7 @@ body {
   }
   .gallery-container .wrapper img {
     width: 45vw;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
   .gallery-container .wrapper.reverse {
     flex-direction: row;

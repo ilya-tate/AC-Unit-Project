@@ -19,8 +19,33 @@
         color: $clr-primary-2;
       }
     }
-    &:last-of-type{ 
+    &:last-of-type {
       border-bottom: none;
+    }
+  }
+}
+
+@include tablet {
+  .link-list {
+    margin: 0;
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+    li {
+      border-bottom: none;
+      width: 100%;
+      color: $clr-black;
+      height: 4rem;
+      font-size: 2rem;
+      text-align: center;
+      .link {
+        font-weight: bold;
+        color: lightgrey;
+        transition: 0.1s all;
+        &:hover {
+          color: $clr-primary-2;
+        }
+      }
     }
   }
 }

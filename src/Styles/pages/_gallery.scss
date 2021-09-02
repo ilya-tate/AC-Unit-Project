@@ -44,6 +44,7 @@
       }
       img {
         width: 45vw;
+        box-shadow: $dark-shadow;
       }
       &.reverse{
         flex-direction: row;
