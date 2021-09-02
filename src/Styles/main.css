@@ -274,7 +274,8 @@ body {
   height: 5rem;
   padding: 0;
   width: 15%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .navbar .nav-center .nav-toggle {
   font-size: 2rem;
@@ -321,7 +322,8 @@ body {
     height: 6rem;
     padding: 0;
     width: 5%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .navbar .sliding {
     position: fixed;
@@ -558,6 +560,7 @@ body {
   justify-content: center;
   flex-direction: column;
   padding-top: 7rem;
+  height: 65vh;
 }
 
 .gallery-container {
@@ -580,6 +583,8 @@ body {
 }
 .gallery-container .wrapper img {
   width: 90vw;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10%;
 }
 .gallery-container .wrapper.reverse {
   flex-direction: column-reverse;
@@ -606,7 +611,6 @@ body {
   }
   .gallery-container .wrapper img {
     width: 45vw;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
   .gallery-container .wrapper.reverse {
     flex-direction: row;

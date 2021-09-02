@@ -18,6 +18,9 @@
     }
     img {
       width: 90vw;
+      box-shadow: $dark-shadow;
+      border-radius: 10%;
+
     }
     &.reverse{
       flex-direction: column-reverse;
@@ -44,7 +47,6 @@
       }
       img {
         width: 45vw;
-        box-shadow: $dark-shadow;
       }
       &.reverse{
         flex-direction: row;

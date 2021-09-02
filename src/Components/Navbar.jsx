@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai"
 import logo from "../util/logo.svg";
 import Links from "./Links";
 
@@ -22,7 +23,7 @@ const Navbar = ({ size }) => {
             onClick={() => setShowLinks(!showLinks)}
             className="nav-toggle"
           >
-            <GiHamburgerMenu />
+            <AiOutlineClose />
           </button>
           <Links />
         </div>)
